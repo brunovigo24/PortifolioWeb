@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="light dark">
+    
+</head>
+<body>
+    <pre style="word-wrap: break-word; white-space: pre-wrap;">
+         #include <stdio.h> 
+         #include <locale.h> 
+            
+            int main(){
+            setlocale(LC_ALL, "Portuguese");
+            int carro, cor, motor;
+            
+            printf ("\n Escoha o modelo do seu carro:  ");
+             
+              printf ("\n 1- Chevrolet Onix");
+              printf ("\n 2- Hyundai HB20");
+              printf ("\n 3- Ford Ka Sedan\n");
+              scanf ("%d", &carro);
+            
+            
+            printf ("\n Escoha entre as 3 cores:  ");
+             
+              printf ("\n 1- Verde");
+              printf ("\n 2- Amarelo");
+              printf ("\n 3- Vermelho\n");
+              scanf ("%d", &cor);
+            
+            printf ("\n Escolha entre os motores  ");
+             
+              printf ("\n 1- Motor 1.0");
+              printf ("\n 2- Motor 1.6\n");
+              scanf ("%d", &motor);
+             
+            if (carro== 1)    
+                   printf ("Você escolheu o carro Chevrolet Onix ");
+                if (carro== 2)    
+                   printf ("Você escolheu o carro Hyundai HB20 ");
+                if (carro== 3)    
+                   printf ("Você escolheu o carro Ford Ka Sedan ");
+               
+             
+            if (cor==1)
+             printf ("de cor Verde ");
+            if (cor==2)
+             printf ("de cor Amarelo ");
+            if (cor==3)
+             printf ("de cor Vermelho ");  
+            
+            if (motor==1)
+             printf ("com Motor 1.0");  
+            if (motor==2)
+             printf ("com Motor 1.6");  
+               
+            printf ("\nSeu pedido foi realizado");
+            }
+</body>
+</html>

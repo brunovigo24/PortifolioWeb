@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="light dark">
+    
+</head>
+<body>
+    <pre style="word-wrap: break-word; white-space: pre-wrap;">
+        #include <stdio.h>
+            #include <locale.h>
+            
+            int main (){
+                setlocale (LC_ALL, "Portuguese");
+                char us1, us2, us3, login;
+                int se1, se2, se3, senha;
+                us1 = 'a'; us2 = 'b'; us3 = 'c';
+                se1 = 1234; se2 = 2345; se3 = 7856;
+                do {
+                    fflush(stdin);
+                    printf ("Login: ");
+                    scanf ("%c", &login);
+                      printf ("Senha: ");
+                    scanf ("%d", &senha);
+                    // Foi adicionado o else em cada if para que o processamento seja correto, pois o else do final estava ligado apenas ao usuário us3 antes
+                    if (login == us1 && senha == se1) {			
+                        printf ("\nSeja bem vindo %c\n", login);
+                        break;
+                    } else if (login == us2 && senha == se2){	/
+                        printf ("\nSeja bem vindo %c\n", login);
+                        break;
+                    } else if (login == us3 && senha == se3){	
+                        printf ("\nSeja bem vindo %c\n", login);
+                        break;
+                    } else {									
+                        printf ("\nUsuário inválido\n");
+                    }
+                } while (1);   
+            }
+        </body>
+        </html>
